@@ -1,0 +1,36 @@
+.unet_black_overlay
+{
+	position:fixed;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	opacity:0.8;
+	background-color:#000000;
+	z-index:2000;
+}
+/*********************************DIALOG PANEL STYLE**********************************/
+.unet_dialog_panel
+{}
+.unet_dlg_header
+{
+	background-color:#f3f3f3;height:40px;font:13px BYekanRegular;direction:rtl;text-align:right;border-bottom:1px solid #cfcfcf;position:relative;line-height:40px;
+}
+.unet_hd_ico
+{
+	position:relative;top:5px;right:5px;display:inline-block;vertical-align:top;background-image:url('../img/restkey.png');width:30px;height:30px;
+}
+.unet_hd_lbl
+{
+	position:relative;right:5px;display:inline-block;vertical-align:top;
+}
+.unet_hd_cmd_btn
+{
+	position:relative;top:16px;left:8px;float:left;vertical-align:top;background-image:url('../img/img_close_3.png');width:12px;height:12px;
+}
+.unet_hd_cmd_btn:hover
+{
+	cursor:pointer;
+}
+/**********************************************************************/
+/**********************************************************************/

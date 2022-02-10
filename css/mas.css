@@ -1,0 +1,220 @@
+#app_mas
+{
+	background-color: #68217a;	
+	font-size:13px;
+	border:4px solid #68217a;				
+    -moz-box-shadow: 0px 0px 2px #68217a;
+    -webkit-box-shadow: 0px 0px 2px #68217a;
+    box-shadow: 0px 0px 2px #68217a;
+}
+#app_mas .windowpanel_header
+{
+	background-color: #68217a;
+	font-family:BYekanRegular;
+	font-size:13px;
+	color:white;
+}
+#app_mas .windowpanel_body
+{
+	background-color: white;
+}
+
+.mas_txt_style
+{
+	border:2px solid #68217a;
+	padding:3px;
+	font-family:BYekanRegular;
+	font-size:13px;
+}
+
+.mas_btnico_style
+{
+	padding:3px;
+	background-color: #68217a;
+	color:white;
+	font-family:BYekanRegular;
+	font-size:13px;
+	border:1px solid #68217a;
+	overflow:auto;	
+	position:relative;
+	text-align:center;
+	margin:0px;
+}
+.mas_btnico_style:hover
+{
+	cursor:pointer;				
+}
+.mas_btnico_img
+{
+	float: right;
+	padding-right:3px;
+	width:20px;height:20px;
+}
+.mas_btn_lbl
+{			
+	float: right;
+}
+
+.imgwindowpanel
+{
+	height: 14px;vertical-align: middle;float: left;
+	margin-right:5px;
+	position:relative;
+	top:2px;
+	
+}
+.imgwindowpanel:hover
+{
+	cursor:pointer;
+}
+.mas_window_body
+{
+	
+}
+#dragResize 
+{
+	width: 100px;
+	height: 100px;
+	border: 1px solid black;
+	position: absolute;
+}
+
+select.cnt_cmbx { width: 400px; text-align:center; }
+select.cnt_cmbx option { text-align:center; }
+
+@-moz-document url-prefix() {
+    select {
+        padding-top: 5px;
+    }
+}
+
+.mas_tbl
+{
+	width:100%;
+	border-collapse: collapse;
+}
+table.mas_tbl, .mas_tbl th, .mas_tbl td {
+	border: 1px solid #68217a;
+	padding:3px;
+}
+.mas_tbl tr.header_row
+{
+	background-color: #68217a;
+	color:white;
+	font-family:tahoma;
+	font-size:13px;
+	text-align:center;
+}
+.mas_tbl tr.data_row
+{
+	font-family:tahoma;
+	font-size:13px;
+	text-align:center;
+}
+.mas_tbl tr.footer_row
+{
+	font-family:tahoma;
+	font-size:13px;
+}
+.img_show_details
+{
+	display:;
+}
+.img_show_details:hover
+{
+	cursor:pointer;
+}
+
+.pindex
+{
+    display: inline-block;border: 1px solid #68217a;padding: 1px 6px;background-color: #68217a;color: white;
+    text-decoration: none;
+    margin: 0px 3px;
+}
+.pindex:hover
+{
+    background-color: #68217a;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.pinsel
+{
+	background-color: #68217a;
+    color: #ffffff;
+}
+
+.mass_ddl_chkbx
+{
+	background-color:white;
+	font-family:tahoma;
+	font-size:12px;
+	border:1px solid #68217a;
+}
+.mass_ddl_chkbx:hover
+{
+	cursor:pointer;
+}
+
+.mass_date_fromto
+{
+	background-color:white;
+	font-family:tahoma;
+	font-size:12px;
+	border:1px solid #68217a;
+}
+.mass_date_fromto:hover
+{
+	cursor:pointer;
+}
+.mass_range
+{
+	background-color:white;
+	font-family:tahoma;
+	font-size:12px;
+	border:1px solid #68217a;
+}
+.mass_range:hover
+{
+	cursor:pointer;
+}
+#btn_tbl_refresh
+{
+	position:relative;top:3px;
+}
+#btn_tbl_refresh:hover
+{
+	cursor:pointer;
+}
+.mas_tbl_pm_item
+{
+	background-color:#fdfada;border:1px solid #e9cf5f;direction:rtl;font-family:tahoma;font-size:12px;
+							text-align:right;color:black;padding:10px 5px;
+							word-wrap: break-word;width:95%;
+							margin:10px auto;
+							
+}
+.mas_tbl_track_btnimg
+{
+}
+.mas_tbl_track_btnimg:hover
+{
+cursor:pointer;
+}
+.mas_btn
+{
+	background-color: #68217a;
+	color:white;
+	font-family:BYekanRegular;
+	font-size:13px;
+	border:1px solid #68217a;
+}
+.mas_cmb_style
+{
+	font-family: tahoma;
+	font-size: 13px;
+    width: 90%;
+    text-align: right;
+    outline: none;
+}
+

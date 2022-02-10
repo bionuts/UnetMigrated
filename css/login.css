@@ -1,0 +1,99 @@
+body
+{
+	background:url('../img/bg2.jpg') no-repeat;
+	background-size: 100%;
+}	
+input[type=text]
+{
+	border: 1px solid #4499ef;
+	background-color: #e8f3ff;
+	padding: 5px;
+	width: 100%;
+	margin: 5px 0px;
+	
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-khtml-border-radius: 5px;
+	font-weight:bold;
+	font-family:tahoma;
+	outline: none;
+}
+input[type=password]
+{
+	outline: none;
+	border: 1px solid #4499ef;
+	background-color: #e8f3ff;
+	padding: 5px;
+	width: 100%;
+	margin: 5px 0px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-khtml-border-radius: 5px;
+}		
+.login_feildset_style
+{
+	width: 100%;
+	border: 2px solid #4499ef;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-khtml-border-radius: 5px;
+	padding: 10px;
+}
+
+.login_legend_style
+{
+	border: 1px solid #4499ef;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-khtml-border-radius: 5px;
+	padding: 3px 12px;
+	color: #ffffff;
+	font-family: BYekanRegular;
+	font-size: 13px;
+	background-color: #4499ef ;				
+}
+.btn_login_style
+{
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-khtml-border-radius: 5px;
+	padding: 5px 5px;
+	color: #ffffff;
+	font-family: BYekanRegular;
+	font-size: 13px;
+	background-color: #4499ef ;
+	width: 80px;
+	border: none;
+	outline:none;
+}
+.btn_login_style:hover
+{
+	background-color: #2e86de;
+	cursor: pointer;
+}
+label
+{
+	font-family: BYekanRegular;
+	font-size: 13px;
+}	
+.fa_direction
+{
+	direction: rtl;
+	text-align: right;
+}
+.en_dir
+{
+	direction: ltr;
+	text-align: left;
+}
+.box_sized
+{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}

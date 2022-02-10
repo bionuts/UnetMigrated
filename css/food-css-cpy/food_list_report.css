@@ -1,0 +1,18 @@
+.fd_drop_vade
+{
+	font:15px tahoma;
+	padding:0px !important;
+	height:35px !important;
+}
+.food_td_date
+{
+	font:12px tahoma;
+	padding:0px !important;
+	height:35px !important;
+}
+.food_tbl_orders table,td,tr
+{
+	padding:0px !important;
+	margin:0px;
+	height:35px !important;
+}

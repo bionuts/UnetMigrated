@@ -1,0 +1,182 @@
+﻿/*Mehdi Minaee CSS*/
+
+.MsoNormalTable,.WordSection1
+{
+	width:100%;
+	margin:0;
+	background-color:white !important;
+}
+		img{display: block; width: 90%; }
+body
+{
+	direction:rtl;
+	margin:0px;
+}
+table.print td
+{
+    border: 1px solid #ccc;
+	padding:5px;
+}
+.print_bordertbl
+{
+	border: 0px solid #ccc;
+	padding:5px;
+}
+td.print_wrap_text
+{
+	word-break:normal;
+	text-align:justify;
+}
+
+p.print_blocking
+{
+	word-break:normal;
+	display: block;
+    margin-top:5px;
+    margin-bottom: 5px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.print_blocking
+{
+	display:block;
+	word-break:normal;
+}
+
+div.print
+{
+	border-radius:5px;
+	font-family:tahoma;
+	font-size:10px;
+	font-weight:normal;
+	text-align:right;
+	margin-bottom:2px;
+	padding:5px;
+	background-color:#fffffa;
+	border:2px solid #dddddd;
+	-webkit-print-color-adjust: exact;
+	print-color-adjust: exact;
+}	
+
+.box_sized
+{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+#print_main
+{
+    width:100%;
+	margin:0px auto;
+	/*background-color:#e1e1e1;	*/
+	 background:url('img/bk.jpg') top right;
+	min-width:400px;
+}
+#print_header
+{
+	text-align:center;
+	font-weight:bold;
+	padding-top:1px;
+	margin:0px auto;
+	/*background-color:#fffffa;
+	background-color:#e1e1e1;
+*/
+ background:url('img/bk.jpg') top right;	
+	position:relative;
+	z-index:100 !important;
+}
+
+#print_user_info
+{
+	text-align:right;
+	padding-right:20px;
+}
+
+#print_content_header
+{
+	border:0px;
+	text-align:center;
+	border:0px solid #dd11ee;
+	margin:0px auto;
+	/*background-color:#e1e1e1;*/
+	font-size:12px;	
+	
+	
+	padding:0px;
+	text-align:center;
+	width:100%;
+	 background:url('img/bk.jpg') top right;
+}
+
+#print_content_desc
+{
+	position:absolute;
+	top:0px;
+	left:0px;
+	font-weight:normal;
+	font-size:12px;
+	margin:0px auto;
+	border:0px solid #dd11ee;
+	/*background-color:#e1e1e1;	*/
+	padding:0px;
+	font-family:tahoma;
+	line-height:25px;
+	 background:url('img/bk.jpg') top right;
+}
+
+#print_mojavez_num
+{
+	position:absolute;
+	top:0px;
+	right:0px;
+	font-size:12px;
+	font-weight: bold;
+	border:0px solid #dd11ee;
+	/*background-color:#e1e1e1;*/
+	font-family:tahoma;
+	 background:url('img/bk.jpg') top right;
+}
+
+#print_map_content
+{
+	height:100px;
+}
+
+#print_form_info 
+{
+	font-size:10px;
+	text-align:justify;
+}
+
+#print_form_info p
+{
+	margin-top:1px;
+	margin-right:5px;
+	margin-left:5px;
+}
+
+#print_accept_text 
+{
+	text-align:justify;
+	font-size:10px;
+}
+
+td.print_table_hide_rows
+{
+	padding:5px;
+}
+
+#print_important_text 
+{
+	text-align:justify;
+	padding:10px;
+	padding-top:0px;
+}
+
+p.print_reset
+{
+	padding:0px;
+	margin:0px;
+}

@@ -1,0 +1,214 @@
+.blueheader{
+    background: #eaefb5; /* Old browsers */
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2VhZWZiNSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlMWU5YTAiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top,  #eaefb5 0%, #e1e9a0 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eaefb5), color-stop(100%,#e1e9a0)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #eaefb5 0%,#e1e9a0 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #eaefb5 0%,#e1e9a0 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #eaefb5 0%,#e1e9a0 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #eaefb5 0%,#e1e9a0 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eaefb5', endColorstr='#e1e9a0',GradientType=0 ); /* IE6-8 */
+
+}
+
+input[type=button]
+{
+	outline:none;
+}
+
+.blackshadow
+{
+    -webkit-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);
+}
+body
+{
+	padding:0px;
+	margin:0px;
+	background:url('../img/bg2.jpg') no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+    /*background-color: #d5d5d5;*/
+}
+a
+{
+text-decoration:none;
+}
+.windowpanel
+{
+	font-size:13px;
+	position: fixed;
+}
+.windowpanel_header
+{
+	height:30px;
+	width:100%;
+	padding:5px;
+}
+.windowpanel_body
+{
+	width:100%;				
+	padding:5px;
+	margin:0px;
+}
+.windowpanel_header_icon
+{
+	float:right;
+	width:20px;height:20px;
+	position:relative;
+	top:-2px;
+}
+.windowpanel_header_title
+{
+	padding-right:8px;
+	float:right;
+	position:relative;
+	top:-3px;
+}
+.windowpanel_header_btns
+{
+	float:left;
+}
+.byekan-13
+{
+    font-family:BYekanRegular !important;	font-size:13px;
+}
+
+
+
+/****************************************************/
+.box_sized
+{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.radius5
+{
+	-webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -khtml-border-radius: 5px;
+}
+.radius3
+{
+	-webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -khtml-border-radius: 3px;
+}
+.fadir
+{
+	text-align:right;
+	direction:rtl;
+}
+.endir
+{
+	text-align:left;
+	direction:ltr;
+}
+.desktop-icon
+{
+	width:60px;				
+	margin:10px;
+					
+	text-align:center;	
+}
+.icon-img
+{
+	width:50px;
+	height:50px;
+}
+.icon-img:hover
+{
+	cursor:pointer;
+}
+.icon-label
+{
+	font-family:tahoma;
+	font-size:11px;
+	color:black;
+	position:relative;
+	top:-7px;
+}
+.btn_img_profile
+{
+	float:right; width:25px;height:25px;position:relative;right:8px;
+	margin-left:4px;
+}
+.btn_img_profile:hover
+{
+	cursor:pointer;
+}
+
+.ul_profile_desktop {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+}
+
+.ul_profile_desktop li {
+	padding: 10px;
+	margin-bottom: 5px;
+
+}
+
+.ul_profile_desktop li:hover {
+	cursor: pointer;
+	background-color: #4d90fe;
+	color: white;
+}
+
+#pm_div {
+	float: right;
+	position: relative;
+	top: 9px;
+}
+
+#pm_div:hover {
+	cursor: pointer;
+}
+
+#icons {
+	margin: 0;
+	padding: 0;
+}
+
+#icons li {
+	margin: 2px;
+	position: relative;
+	padding: 4px 0;
+	cursor: pointer;
+	float: left;
+	list-style: none;
+}
+
+#icons span.ui-icon {
+	float: left;
+	margin: 0 4px;
+}
+.tbl_search_ddl_chkbx
+{
+	padding:3px;
+	width:100%;text-align:center;
+}
+.tbl_search_ddl_chkbx:hover
+{
+	cursor:pointer;
+}
+.tbl_search_ddl_chkbx_content
+{
+	display:none;
+	position:absolute;
+	z-index:9999;
+	text-align:right;padding:5px;
+}
+.tbl_search_ddl_chkbx_content input[type=checkbox]
+{
+	font-family:tahoma;font-size:12px;
+}

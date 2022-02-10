@@ -1,0 +1,31 @@
+.setting_main_panel
+{
+	width:400px;
+	z-index:2001;
+	background-color:white;
+	border:8px solid #32a7cc;
+	top: 20px;
+    left: 50%;
+    margin-left: -200px;
+    position: fixed;	
+}
+.userset_dlg_content
+{
+	padding:10px;
+}
+.setuser_txt_chngpass_style
+{
+	margin:10px auto;display:block;padding:5px;width:80%;border:1px solid #c4c4c4;font:13px tahoma;
+}
+.setuser_btn_chngpass_style
+{
+	margin:10px auto;display:block;padding:5px;width:120px;border:1px solid #c4c4c4;font:13px tahoma;
+	background-color#32a7cc;
+	font:13px BYekanRegular;
+	direction:rtl;
+}
+.setuser_btn_chngpass_style:hover
+{
+	cursor:pointer;
+	background-color:#c4c4c4;
+}

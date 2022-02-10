@@ -1,0 +1,271 @@
+
+					
+					--------
+					<tr class="permit_header_row">
+						<td style="width:4%;vertical-align:bottom;">
+							<div>جزئیات</div>							
+						</td>
+						<td style="width:4%;vertical-align:bottom;">
+							<div>شماره مجوز</div>
+							<div>
+								<input class="box_sized"
+									   style="color:#0158c1;padding:3px;text-align:center;border:1px solid #0158c1;width:100%;" type="text"
+									   id="txt_bugid"/>
+							</div>
+						</td>
+						<td style="width:8%;vertical-align:bottom;">
+							<div>توضیحات مرکز فرمان</div>
+							<div>
+								<input class="box_sized"
+									   style="color:#0158c1;padding:3px;text-align:center;border:1px solid #0158c1;width:100%;" type="text"
+									   id="txt_bugid"/>
+							</div>
+						</td>
+						<td style="width:8%;vertical-align:bottom;">
+							<div>شرح عملیات</div>
+							<div>
+								<input class="box_sized"
+									   style="color:#0158c1;padding:3px;text-align:center;border:1px solid #0158c1;width:100%;" type="text"
+									   id="txt_bugid"/>
+							</div>
+						</td>
+						<td style="width:8%;vertical-align:bottom;">
+							<div>واحد نظارت</div>
+							<div style="position:relative;" id="mas_tbl_header_unitcat">
+								<div class="tbl_search_ddl_chkbx box_sized" style="border:1px solid #0158c1;color:#0158c1;background-color:white;" vis="false">
+									همه موارد
+								</div>
+								<div class="tbl_search_ddl_chkbx_content" style="border:1px solid #0158c1;background-color:#b3d5ff;color:black;width:150px;">
+									<ul style="margin:0px;padding:0px;list-style-type:none;">
+										<li>
+											<input checked="checked" class="st_chkbx_group st_chkbx_all" id="chkk1" type="checkbox" value="0"/>
+											<label for="chkk1">همه موارد</label>
+										</li>
+										<li>
+											<input checked="checked" class="st_chkbx_group" id="chkk2" lbl="سیگنالینگ" type="checkbox" value="1"/>
+											<label for="chkk2">سیگنالینگ</label>
+										</li>
+										<li>
+											<input checked="checked" class="st_chkbx_group" id="chkk3" lbl="تاسیسات برقی" type="checkbox" value="2"/>
+											<label for="chkk3">تاسیسات برقی</label>
+										</li>
+										<li>
+											<input checked="checked" class="st_chkbx_group" id="chkk4" lbl="تاسیسات مکانیکی" type="checkbox" value="3"/>
+											<label for="chkk4">تاسیسات مکانیکی</label>
+										</li>
+										<li>
+											<input checked="checked" class="st_chkbx_group" id="chkk5" lbl="مخابرات" type="checkbox" value="3"/>
+											<label for="chkk5">مخابرات</label>
+										</li>
+										<li>
+											<input checked="checked" class="st_chkbx_group" id="chkk6" lbl="ناوگان" type="checkbox" value="3"/>
+											<label for="chkk5">ناوگان</label>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</td>
+						<td style="width:8%;vertical-align:bottom;">
+							<div>تلفن واحد کشیک</div>
+							<div>
+								<input class="box_sized"
+									   style="color:#0158c1;padding:3px;font-family:tahoma;font-size:12px;
+									   text-align:right;direction:rtl;border:1px solid #0158c1;width:100%;"
+									   type="text" id="txt_bugid"/>
+							</div>
+						</td>
+						<td style="width:8%;vertical-align:bottom;">
+							<div>نام پیمانکار</div>
+							<div style="position:relative;" id="mas_tbl_header_unitcat">
+								<div class="tbl_search_ddl_chkbx box_sized" style="border:1px solid #0158c1;color:#0158c1;background-color:white;" vis="false">
+									همه موارد
+								</div>
+								<div class="tbl_search_ddl_chkbx_content" style="border:1px solid #68217a;background-color:#f8ebfc;color:black;width:150px;">
+									<ul style="margin:0px;padding:0px;list-style-type:none;">
+										<li>
+											<input checked="checked" class="st_chkbx_group st_chkbx_all" id="chkk1" type="checkbox" value="0"/>
+											<label for="chkk1">همه موارد</label>
+										</li>
+										<li>
+											<input checked="checked" class="st_chkbx_group" id="chkk2" lbl="سیگنالینگ" type="checkbox" value="1"/>
+											<label for="chkk2">سیگنالینگ</label>
+										</li>
+										<li>
+											<input checked="checked" class="st_chkbx_group" id="chkk3" lbl="تاسیسات برقی" type="checkbox" value="2"/>
+											<label for="chkk3">تاسیسات برقی</label>
+										</li>
+										<li>
+											<input checked="checked" class="st_chkbx_group" id="chkk4" lbl="تاسیسات مکانیکی" type="checkbox" value="3"/>
+											<label for="chkk4">تاسیسات مکانیکی</label>
+										</li>
+										<li>
+											<input checked="checked" class="st_chkbx_group" id="chkk5" lbl="مخابرات" type="checkbox" value="3"/>
+											<label for="chkk5">مخابرات</label>
+										</li>
+										<li>
+											<input checked="checked" class="st_chkbx_group" id="chkk6" lbl="ناوگان" type="checkbox" value="3"/>
+											<label for="chkk5">ناوگان</label>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</td>
+						<td style="width:10%;vertical-align:bottom;">
+							<div>زمان انجام فعالیت</div>
+							<div style="position:relative;" id="permit_tbl_header_permittype">
+								<div class="tbl_search_ddl_chkbx box_sized" style="border:1px solid #0158c1;color:#0158c1;background-color:white;" vis="false">
+									همه موارد
+								</div>
+								<div class="tbl_search_ddl_chkbx_content" style="border:1px solid #0158c1;background-color:#b3d5ff;color:black;width:220px;">
+									<ul style="margin:0px;padding:0px;list-style-type:none;">
+										<li>
+											<input checked="checked" class="st_chkbx_group st_chkbx_all" id="pchk1" type="checkbox" value="0"/>
+											<label for="pchk1">همه موارد</label>
+										</li>
+										<li>
+											<input checked="checked" class="st_chkbx_group" id="pchk2" lbl=" 00 : 01 بامداد تا شروع بهره برداری" type="checkbox" value="1"/>
+											<label style="text-align:right;direction:rtl;" for="pchk2">00:01 بامداد تا شروع بهره برداری</label>
+										</li>
+										<li>
+											<input checked="checked" class="st_chkbx_group" id="pchk3" lbl="زمان بهره برداری" type="checkbox" value="2"/>
+											<label for="pchk3">زمان بهره برداری</label>
+										</li>
+										<li>
+											<input checked="checked" class="st_chkbx_group" id="pchk4" lbl="اتمام بهره برداری تا 23:59" type="checkbox" value="3"/>
+											<label for="pchk4">اتمام بهره برداری تا 23:59</label>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</td>
+						<td style="width:10%;vertical-align:bottom;">
+							<div>حوزه کاری</div>
+							<div style="position:relative;" id="mas_tbl_header_naghscat">
+								<div class="permit_ddl_chkbx box_sized" style="padding:3px;
+												width:100%;text-align:center;color:#0158c1;" vis="false">
+									همه موارد
+								</div>
+								<div class="permit_ddl_chkbx_content"
+									 style="display:none;border:1px solid #68217a;position:absolute;z-index:999;
+												background-color:#f8ebfc;color:black;width:200px;text-align:right;padding:5px;">
+									<ul style="margin:0px;padding:0px;list-style-type:none;">
+										<li><input checked="checked" class="st_chkbx_group st_chkbx_all"
+												   style="font-family:tahoma;font-size:12px;" id="chk111" type="checkbox"
+												   value="0"><label for="chk111">همه موارد</label></li>
+										<li><input checked="checked" class="st_chkbx_group" style="font-family:tahoma;font-size:12px;"
+												   id="chk222" lbl="AFC" type="checkbox" value="1"><label for="chk222">AFC</label></li>
+										<li><input checked="checked" class="st_chkbx_group" style="font-family:tahoma;font-size:12px;"
+												   id="chk333" lbl="مدار راه" type="checkbox" value="2"><label for="chk333">مدار
+											راه</label></li>
+										<li><input checked="checked" class="st_chkbx_group" style="font-family:tahoma;font-size:12px;"
+												   id="chk444" lbl="سوزن" type="checkbox" value="3"><label for="chk444">سوزن</label>
+										</li>
+										<li><input checked="checked" class="st_chkbx_group" style="font-family:tahoma;font-size:12px;"
+												   id="chk555" lbl="اینترلاکینگ" type="checkbox" value="3"><label for="chk555">اینترلاکینگ</label>
+										</li>
+										<li><input checked="checked" class="st_chkbx_group" style="font-family:tahoma;font-size:12px;"
+												   id="chk666" lbl="سیگنالینگ" type="checkbox" value="3"><label
+												for="chk666">سیگنالینگ</label></li>
+									</ul>
+								</div>
+							</div>
+						</td>
+						<td style="width:10%;vertical-align:bottom;">
+							<div>محل کار</div>
+							<div style="position:relative;" id="mas_tbl_header_naghscat">
+								<div class="permit_ddl_chkbx box_sized" style="padding:3px;
+												width:100%;text-align:center;color:#0158c1;" vis="false">
+									همه موارد
+								</div>
+								<div class="permit_ddl_chkbx_content"
+									 style="display:none;border:1px solid #68217a;position:absolute;z-index:999;
+												background-color:#f8ebfc;color:black;width:200px;text-align:right;padding:5px;">
+									<ul style="margin:0px;padding:0px;list-style-type:none;">
+										<li><input checked="checked" class="st_chkbx_group st_chkbx_all"
+												   style="font-family:tahoma;font-size:12px;" id="chk111" type="checkbox"
+												   value="0"><label for="chk111">همه موارد</label></li>
+										<li><input checked="checked" class="st_chkbx_group" style="font-family:tahoma;font-size:12px;"
+												   id="chk222" lbl="AFC" type="checkbox" value="1"><label for="chk222">AFC</label></li>
+										<li><input checked="checked" class="st_chkbx_group" style="font-family:tahoma;font-size:12px;"
+												   id="chk333" lbl="مدار راه" type="checkbox" value="2"><label for="chk333">مدار
+											راه</label></li>
+										<li><input checked="checked" class="st_chkbx_group" style="font-family:tahoma;font-size:12px;"
+												   id="chk444" lbl="سوزن" type="checkbox" value="3"><label for="chk444">سوزن</label>
+										</li>
+										<li><input checked="checked" class="st_chkbx_group" style="font-family:tahoma;font-size:12px;"
+												   id="chk555" lbl="اینترلاکینگ" type="checkbox" value="3"><label for="chk555">اینترلاکینگ</label>
+										</li>
+										<li><input checked="checked" class="st_chkbx_group" style="font-family:tahoma;font-size:12px;"
+												   id="chk666" lbl="سیگنالینگ" type="checkbox" value="3"><label
+												for="chk666">سیگنالینگ</label></li>
+									</ul>
+								</div>
+							</div>
+						</td>
+						<td style="width:9%;vertical-align:bottom;">
+							<div>نوع مجوز</div>
+							<div style="position:relative;" id="permit_tbl_header_permittype">
+								<div class="tbl_search_ddl_chkbx box_sized" style="border:1px solid #0158c1;color:#0158c1;background-color:white;" vis="false">
+									همه موارد
+								</div>
+								<div class="tbl_search_ddl_chkbx_content" style="border:1px solid #0158c1;background-color:#b3d5ff;color:black;width:150px;">
+									<ul style="margin:0px;padding:0px;list-style-type:none;">
+										<li>
+											<input checked="checked" class="st_chkbx_group st_chkbx_all" id="pchk1" type="checkbox" value="0"/>
+											<label for="pchk1">همه موارد</label>
+										</li>
+										<li>
+											<input checked="checked" class="st_chkbx_group" id="pchk2" lbl="گروه پیاده" type="checkbox" value="1"/>
+											<label for="pchk2">گروه پیاده</label>
+										</li>
+										<li>
+											<input checked="checked" class="st_chkbx_group" id="pchk3" lbl="وسیله نقلیه ریلی کمکی" type="checkbox" value="2"/>
+											<label for="pchk3">وسیله نقلیه ریلی کمکی</label>
+										</li>
+										<li>
+											<input checked="checked" class="st_chkbx_group" id="pchk4" lbl="مانور/تست گرم قطار" type="checkbox" value="3"/>
+											<label for="pchk4">مانور/تست گرم قطار</label>
+										</li>
+										<li>
+											<input checked="checked" class="st_chkbx_group" id="pchk4" lbl="انتقال واگن سرد" type="checkbox" value="3"/>
+											<label for="pchk4">انتقال واگن سرد</label>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</td>												
+						<td style="width:7%;vertical-align:bottom;">
+							<div>توضیحات ناظر</div>
+							<div>
+								<input class="box_sized"
+									   style="color:#0158c1;padding:3px;font-family:tahoma;font-size:12px;
+									   text-align:right;direction:rtl;border:1px solid #0158c1;width:100%;"
+									   type="text" id="txt_bugid"/>
+							</div>
+						</td>						
+						<td style="width:4%;vertical-align:bottom;">
+							<div>نیاز به قطع برق</div>
+							<div style="position:relative;" id="permit_tbl_header_permittype">
+								<div class="tbl_search_ddl_chkbx box_sized" style="border:1px solid #0158c1;color:#0158c1;background-color:white;" vis="false">
+									همه موارد
+								</div>
+								<div class="tbl_search_ddl_chkbx_content" 
+									style="left:0px;border:1px solid #0158c1;background-color:#b3d5ff;color:black;width:80px;">
+									<ul style="margin:0px;padding:0px;list-style-type:none;">
+										<li>
+											<input checked="checked" class="st_chkbx_group st_chkbx_all" id="pchk1" type="checkbox" value="0"/>
+											<label for="pchk1">همه موارد</label>
+										</li>
+										<li>
+											<input checked="checked" class="st_chkbx_group" id="pchk2" lbl="دارد" type="checkbox" value="1"/>
+											<label for="pchk2">دارد</label>
+										</li>
+										<li>
+											<input checked="checked" class="st_chkbx_group" id="pchk3" lbl="ندارد" type="checkbox" value="2"/>
+											<label for="pchk3">ندارد</label>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</td>						
+					</tr

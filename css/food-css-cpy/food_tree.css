@@ -1,0 +1,434 @@
+.food_img_show_report
+{
+	vertical-align:top;display:inline-block;background:url('../img/chart8.png') no-repeat;width:30px;height:30px;
+}
+.food_img_show_report:hover
+{
+	cursor:pointer;
+}
+.parent_rating_panel
+{
+	float:left;display:inline-block;width:210px;height:20px;padding:0px;position:relative;top:3px;left:5px;
+}
+.parent_rating_panel div
+{
+	float:left;width:20px;height:20px;display:inline-block;
+	background:url('../img/stars.png') no-repeat 0px 0px;
+	margin-right:1px;
+}
+.radius5 
+{
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -khtml-border-radius: 5px;
+}
+
+.highlighttext {
+    background-color: #3399ff;
+    color: white;
+}
+
+.txt_menu_edit {
+    border: 1px solid #333333;
+    font-family: tahoma, arial;
+    font-size: 11px;
+    direction: rtl;
+    text-align: right;
+}
+
+.contextMenu {
+    font: 12px tahoma;
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+    border: 1px solid #333333;
+    display: inline-block;
+    background-color: #AAAAAA;
+    position: fixed;
+    display: none;
+}
+
+.contextMenu li {
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 1px;
+}
+
+.contextMenu li a {
+    text-decoration: none;
+    display: block;
+    width: 100px;
+    background-color: white;
+    padding: 5px;
+    color: black;
+}
+
+.contextMenu li a:hover {
+    background-color: #fbf1a0;
+}
+
+.ulcat {
+    font: 12px tahoma;
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+}
+
+.ulcat li {
+    padding: 0px;
+    margin: 0px;
+}
+
+li div {
+}
+
+.box_sized {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.tree_node {
+    background-image: url("../img/tree_icons.png");
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 18px;
+    /*outline:1px solid red;*/
+    padding: 0px;
+    margin: 0px;
+    vertical-align: top;
+    display: inline-block;
+}
+
+.lbl_node {
+    position: relative;
+    top: 0px;
+    font: 12px tahoma;
+}
+
+.th3wayroad {
+    background-position: -192px -18px;
+}
+
+.th2wayroad_bottom {
+    background-position: -160px -18px;
+}
+
+.leafnode {
+    background-position: -240px 0px;
+}
+
+.gap_block {
+    background-image: none;
+}
+
+.joined_line {
+    background-position: -176px -18px;
+}
+
+.min_middle {
+    background-position: -144px -18px;
+}
+
+.min_up {
+    background-position: -80px -18px;
+}
+
+.min_down {
+    background-position: -80px -18px;
+}
+
+.max_middle {
+    background-position: -128px -18px;
+}
+
+.max_bottom {
+    background-position: -64px -18px;
+}
+
+.parent_icon_node_open {
+    background-position: -224px 0px;
+}
+
+.parent_icon_node_close {
+    background-position: -208px 0px;
+}
+
+.max_bottom:hover, .max_middle:hover {
+    cursor: pointer;
+}
+
+.min_down:hover, .min_middle:hover, .min_up:hover {
+    cursor: pointer;
+}
+
+.node_ajax_gif {
+    background-image: url("../img/loading.gif") !important;
+    background-repeat: no-repeat !important;
+    background-position: 0px 0px !important;
+    width: 16px;
+    height: 16px;
+    padding: 0px;
+    margin: 0px;
+    vertical-align: top;
+    display: inline-block;
+}
+
+.food_items_for_vade {
+    position: relative;
+    font: 13px tahoma;
+    background-color: #f7ff9f;
+    border: 1px solid #e1e985;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+.food_items_for_vade:hover {
+    cursor: move;
+}
+
+.close_food_pick {
+    position: absolute;
+    top: 15px;
+    left: 5px;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+}
+
+.close_food_pick:hover {
+    cursor: pointer;
+}
+
+.food_img_vade_setting:hover {
+    cursor: pointer;
+}
+
+.foodlistscroll {
+}
+
+.food_list_content {
+    width: 100%;
+    padding: 5px;    
+    padding-top: 12px;
+}
+
+.food_vade_items {
+    margin-bottom: 13px;
+    padding: 5px;
+    padding-top: 17px;
+    position: relative;
+    font: 13px tahoma;
+    background-color: #abd5ff;
+    border: 1px solid #89c4ff;
+}
+
+.food_img_vade_hico {
+    position: absolute;
+    top: -13px;
+    right: 5px;
+    width: 35px;
+}
+
+.food_tbl_orders {
+    border-collapse: collapse;
+    border: 1px solid #dddddd;
+    table-layout: fixed;
+}
+
+.food_tbl_orders td {
+    border: 1px solid #727272;
+    text-align: center;
+    padding: 1px 3px;
+    word-wrap: break-word;
+    height: 50px;
+}
+
+.food_tbl_orders tr.food_h_headertbl {
+    background-color: #515151;
+    color: white;
+}
+
+.food_tbl_orders tr.food_f_footertbl {
+    background-color: #515151;
+    color: white;
+}
+
+.food_tbl_orders tr.food_rw_haftegi:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+.food_tbl_orders tr.food_rw_haftegi:nth-child(even) {
+    background-color: #dddddd;
+}
+
+.fd_tbl_ratetbl {
+    border-collapse: collapse;
+    border: 1px solid #dddddd;
+    table-layout: fixed;
+    width: 99%;
+    margin: 5px auto;
+    text-align: center;
+    font: 13px tahoma;
+}
+
+.fd_tbl_ratetbl td {
+    border: 1px solid #727272;
+    text-align: center;
+    padding: 3px 3px;
+    word-wrap: break-word;
+}
+
+.fd_tbl_ratetbl tr.food_h_headertbl {
+    background-color: #515151;
+    color: white;
+}
+
+.fd_tbl_ratetbl tr.food_f_footertbl {
+    background-color: #515151;
+    color: white;
+}
+
+.fd_tbl_ratetbl tr.food_rw_haftegi:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+.fd_tbl_ratetbl tr.food_rw_haftegi:nth-child(even) {
+    background-color: #dddddd;
+}
+
+.food_td_date {
+    background-color: #515151;
+    color: white;
+}
+
+.fd_dv_clz_plf {
+    position: absolute;
+    left: 1px;
+    top: 1px;
+    display: inline-block;
+    padding: 0px 4px 2px 4px;
+    margin: 0px;
+    text-align: center;
+    text-align: -moz-center;
+}
+
+.fd_dv_clz_plf:hover {
+    background-color: #515151;
+    cursor: pointer;
+    color: white;
+}
+
+.fd_dv_cmnt_plf {
+    position: absolute;
+    right: 1px;
+    top: 3px;
+    display: inline-block;
+    padding: 0px 4px 2px 4px;
+    margin: 0px;
+    text-align: center;
+    text-align: -moz-center;
+}
+
+.fd_dv_cmnt_plf:hover {
+    cursor: pointer;
+}
+
+.fd_dv_chkbx_plf {
+    position: absolute;
+    left: -2px;
+    top: -8px;
+    display: inline-block;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    text-align: -moz-center;
+    display: none;
+}
+
+.fd_vade_hafte {
+    text-align: center;
+    position: relative;
+    margin: 3px 0px;
+    padding: 3px;
+    padding-left: 10px;
+    width: 100%;
+    border: 1px solid #70fb77;
+    background-color: #c2ffc5;
+    color: black;
+    font: 11px tahoma;
+}
+
+.fd_vade_hafte_users {
+    text-align: center;
+    position: relative;
+    margin: 3px 0px;
+    padding: 3px;
+    padding: 3px 18px;
+    width: 100%;
+    border: 1px solid #ffc57d;
+    background-color: #ffdcb0;
+    color: black;
+    font: 11px tahoma;
+}
+
+.fd_vade_hafte_users_eat {
+    text-align: center;
+    position: relative;
+    margin: 3px 0px;
+    padding: 3px;
+    padding: 3px 18px;
+    width: 100%;
+    border: 1px solid #A0A0A0;
+    background-color: #C8C8C8;
+    color: black;
+    font: 11px tahoma;
+}
+
+.fd_vade_hafte_users_noeat {
+    text-align: center;
+    position: relative;
+    margin: 3px 0px;
+    padding: 3px;
+    padding: 3px 18px;
+    width: 100%;
+     border: 1px solid #94ff99;
+    background-color: #c5ffc8;
+    color: black;
+    font: 11px tahoma;
+	opacity: 0.6;
+}
+
+.fd_selgreenuser {
+    border: 1px solid #94ff99;
+    background-color: #c5ffc8;
+}
+
+.whenwantdrop {
+    background-color: #f2a74b;
+}
+
+.food_opacityblack 
+{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: black;
+    opacity: 0.8;
+    z-index: 1328;
+}
+
+.food_overlayrate {	
+    top: 20%;
+    left: 50%;
+    margin-left: -150px;
+    position: fixed;
+    width: 600px;
+    background-color: white;
+    z-index: 1329;
+	border:6px solid #788dc6;
+	opacity:1.0 !important;
+}

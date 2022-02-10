@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'BYekanRegular';
+    src: url('byekan.eot');
+    src: url('byekan.eot') format('embedded-opentype'),
+         url('byekan.woff') format('woff'),
+         url('byekan.ttf') format('truetype'),
+         url('byekan.svg#BYekanRegular') format('svg');
+}

@@ -1,0 +1,55 @@
+/* Vahdahoo css*/
+.setting{
+	width: 90%;
+	text-align:right;
+	font:12px tahoma;
+	padding:2px;
+}
+.meal_lists { overflow: auto;} 
+
+.view-table
+{
+    display:table;
+    width:100%;
+    border-bottom: 1px solid #6fb7ff;
+    margin-bottom: 5px;
+}
+.view-row,
+{
+    display:table-row;
+
+    font-family: BYekanRegular;
+}
+.view-row > div
+{
+    display: table-cell;
+    padding: 3px;
+}
+.view-name
+{
+    text-align:right;
+}
+.view-type {
+    width: 85px;
+
+}
+
+.meal_btn {
+	width:65px;
+	border:1px solid gray;
+	font:12px tahoma !important;
+	outline:none;
+	padding:3px;
+}
+.meal_btn:hover{
+cursor:pointer;}
+.samancss {
+    overflow: auto;
+    position: relative;
+}
+
+.pricemeal
+{
+    color: red;
+    text-align: left;
+}

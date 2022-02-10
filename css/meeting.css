@@ -1,0 +1,163 @@
+#app_meeting
+{
+	background-color: #fab136;	
+	font-size:13px;
+	border:2px solid #fab136;				
+    -moz-box-shadow: 0px 0px 2px #fab136;
+    -webkit-box-shadow: 0px 0px 2px #fab136;
+    box-shadow: 0px 0px 2px #fab136;
+}
+.fieldrequire
+{
+	border:1px solid #f64b4b;
+	background-color:#ffd0d0;
+}
+
+#app_meeting .windowpanel_header
+{
+	background-color: #fab136;
+	font-family:BYekanRegular;
+	font-size:13px;
+	color:white;
+}
+#app_meeting .windowpanel_body
+{
+	background-color: #f0f7ff;
+}
+
+.meeting_btn_ico
+{
+	display: inline-block;
+}
+.meeting_btn_lbl
+{
+	display: inline-block;
+}
+@-moz-document url-prefix() {
+    select {padding-bottom:6px;}
+}
+.meeting_cmbox_style
+{
+	font-family: tahoma !important;
+	font-size: 13px;	
+	color:#ff0084;
+	outline: none;
+	padding:3px;
+}
+.meeting_cmbox_style option
+{	
+	font-family: tahoma !important;
+	font-size: 13px;
+}
+.meeting_fieldset_style
+{
+	border:1px solid #5373ea;
+	display:inline-block;
+	font-family:tahoma;
+	font-size:13px;
+	background-color:#fbfbfb;
+	margin-bottom:5px;
+}
+.meeting_img_show_details
+{
+	display:inline;
+	width:26px;
+	height:26px;
+}
+.meeting_img_show_details:hover
+{
+	cursor:pointer;
+}
+.meeting_fieldset_style legend
+{
+	border:1px solid #5373ea;
+	display:block;
+	padding:5px 10px;
+	width:100px;
+	background-color:#5373ea;
+	color:white;
+	text-align:center;
+}
+
+.meeting_text_style
+{
+	border:1px solid #a9a9a9;
+	padding:3px 3px 7px 3px;
+	background-color:white;
+	font-family:tahoma !important;
+	font-size:13px;
+}
+.meeting_txtarea_style
+{
+	border:1px solid #a9a9a9;
+	background-color:white;
+	resize:none;
+	padding:5px;
+	font-family:tahoma !important;
+	font-size:13px;
+	width:100%;
+}
+.meeting_btn_style
+{
+	border:1px solid #fab136;
+	background-color:#fab136;
+	color:white;
+	padding:3px;
+	font-family:BYekanRegular !important;
+	font-size:13px;
+	outline:none;
+}
+.meeting_btn_style:hover
+{
+	background-color:#d68f17 ;
+	border:1px solid #d68f17 ;
+	cursor:pointer;
+}
+
+.meeting_tbl
+{
+	font-family:tahoma;
+	font-size:13px;
+	border-collapse: collapse;
+	width: 100%; 
+}
+
+.meeting_row_yellow
+{
+	background-color:#fbfcab;
+}
+.meeting_row_green
+{
+	background-color:#b1ffae;
+}
+.meeting_row_red
+{
+	background-color:#ffaeae;
+}
+
+.fieldrequire
+{
+	border:1px solid #f64b4b;
+	background-color:#ffd0d0;
+}
+#meeting_tbl_conflict
+{
+	font-family:tahoma;
+	font-size:13px;
+	border-collapse: collapse;
+	width: 100%; 
+	text-align:center;
+	border:1px solid white;
+}
+#meeting_tbl_conflict td
+{
+	border:1px solid white;
+}
+#meeting_tbl_conflict .meeting_tbl_conflict_header
+{
+	background-color:#e94331;
+	color:white;
+}
+
+#meeting_tbl_conflict tr.meeting_tbl_conflict_row:nth-child(even) {background: #ffeae8;}
+#meeting_tbl_conflict tr.meeting_tbl_conflict_row:nth-child(odd) {background: #f8cbc6;}

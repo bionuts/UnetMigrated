@@ -1,0 +1,101 @@
+﻿/*Mehdi Minaee CSS*/
+div.user_more_info
+{
+	font-family:tahoma;
+	font-size:13px;
+	font-weight:normal;
+
+}	
+
+.box_sized
+{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.radius5
+{
+	-webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -khtml-border-radius: 5px;
+}
+.radius3
+{
+	-webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -khtml-border-radius: 3px;
+}
+#user_more_info_main
+{
+    
+	margin:0px auto;		
+	border:3px solid #0158c1;
+	font-family:tahoma;
+	font-size:12px;
+	font-weight:normal;
+}
+#user_more_info_header
+{
+	border:0px solid #ffaa33;
+	text-align:center;
+	font-weight:bold;
+	padding-top:1px;
+	margin:0px auto;
+	
+	background-color:#0158c1;	
+	position:relative;
+	height:35px;
+	line-height:35px;
+}
+
+#user_more_info_exit
+{
+	position:absolute;
+	top:1px;
+	left:5px;
+}
+
+#user_more_info_title
+{
+	position:absolute;
+	top:0px;
+	right:5px;
+	color:white;	
+	padding:0px;
+}
+
+
+#user_more_info_form_info 
+{
+	font-size:13px; !important
+	text-align:justify;
+	padding:3px;
+}
+
+
+#user_more_info_form_info_internal 
+{
+	background-color:#f2f2f2;
+	padding:5px;
+}
+.permit_fieldset_style
+{
+	border:1px solid #5373ea;
+	display:inline-block;
+	font-family:tahoma;
+	font-size:13px;
+	background-color:#fbfbfb;
+	margin-bottom:5px;
+}
+.permit_fieldset_style legend
+{
+	border:1px solid #5373ea;
+	display:block;
+	padding:5px 10px;
+	width:100px;
+	background-color:#5373ea;
+	color:white;
+	text-align:center;
+}

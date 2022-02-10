@@ -1,0 +1,20 @@
+.tbl_print_food
+{
+	border-collapse:collapse;
+	border:1px solid lightgray;
+}
+
+.tbl_print_food td
+{
+	border:1px solid lightgray;
+	padding:3px;
+}
+
+.tbl_print_food tr:nth-child(odd)
+{
+	background-color:#f6f6f6;
+}
+.tbl_print_food tr:nth-child(even)
+{
+	background-color:white;
+}
