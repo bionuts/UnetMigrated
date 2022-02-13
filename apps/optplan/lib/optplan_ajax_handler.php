@@ -55,18 +55,19 @@ class OPTPlanAjaxManager
         }
     }
 
-    public  function canedit($userid)
+    public function canedit($userid)
     {
         $this->connect();
         $ret = false;
         $sql = "Call optplan_sp_edit_permit('$userid');";
         $res = mysqli_query($this->dbcon, $sql);
-        if (mysqli_num_rows($res)==1) {
+        if (mysqli_num_rows($res) == 1) {
             $ret = true;
         }
         $this->close_connect();
         return $ret;
     }
+
     public function UploadTrafficImg_tomorrow()
     {
         if (0 < $_FILES['fupload_tom_tag']['error']) {
@@ -177,18 +178,19 @@ class OPTPlanAjaxManager
         return $cell['txt_optplan_tbl_hints'];
     }
 
-		
-	private function normalizetext($text)
-	{		
-		//&lt;![if !vml]&gt;
-		$aa = array("&lt;![if !vml]&gt;","&lt;![if !supportLists]&gt;","&lt;![endif]&gt;","&lt;script","&lt;/script&gt;","<script","</script>");
-		$bb   = array(" "," "," ","<lol","</lol>","<lol","</lol>");
-		return addslashes(str_replace($aa, $bb, $text));
-	}
+
+    private function normalizetext($text)
+    {
+        //&lt;![if !vml]&gt;
+        $aa = array("&lt;![if !vml]&gt;", "&lt;![if !supportLists]&gt;", "&lt;![endif]&gt;", "&lt;script", "&lt;/script&gt;", "<script", "</script>");
+        $bb = array(" ", " ", " ", "<lol", "</lol>", "<lol", "</lol>");
+        return addslashes(str_replace($aa, $bb, $text));
+    }
+
     public function set_opt_for_today($text)
     {
         $this->connect();
-		$text =  $this->normalizetext($text);
+        $text = $this->normalizetext($text);
         $sql = "Call optplan_sp_upsert_for_opt('$text');";
         $res = mysqli_query($this->dbcon, $sql);
         if (mysqli_affected_rows($this->dbcon)) {
@@ -203,7 +205,7 @@ class OPTPlanAjaxManager
     public function set_opt_for_tomorrow($text)
     {
         $this->connect();
-		$text =  $this->normalizetext($text);
+        $text = $this->normalizetext($text);
         $sql = "Call optplan_sp_upsert_for_opt_tomorrow('$text');";
         $res = mysqli_query($this->dbcon, $sql);
         if (mysqli_affected_rows($this->dbcon)) {
@@ -222,8 +224,9 @@ class OPTPlanAjaxManager
         $res = mysqli_query($this->dbcon, $sql);
         $cell = mysqli_fetch_assoc($res);
         $this->close_connect();
-        return $cell['opt_plan_txt_optplan_tbl_main'];
+        return $cell['opt_plan_txt_optplan_tbl_main'] ?? "";
     }
+
     public function get_opt_for_tomorrow()
     {
         $this->connect();
@@ -231,28 +234,28 @@ class OPTPlanAjaxManager
         $res = mysqli_query($this->dbcon, $sql);
         $cell = mysqli_fetch_assoc($res);
         $this->close_connect();
-        return $cell['opt_plan_txt_optplan_tbl_main'];
+        return $cell['opt_plan_txt_optplan_tbl_main'] ?? "";
     }
-	
-	public function get_note_for_print_permit($permit_date)
-	{
-		$this->connect();
+
+    public function get_note_for_print_permit($permit_date)
+    {
+        $this->connect();
         $sql = "Call optplan_sp_get_note_for_print_permit_date('$permit_date');";
         $res = mysqli_query($this->dbcon, $sql);
         $cell = mysqli_fetch_assoc($res);
         $this->close_connect();
-        return $cell['optnotes_optplan_tbl_main'];
-	}
-	
-	public function get_opt_for_print_permit($permit_date)
-	{
-		$this->connect();
+        return $cell['optnotes_optplan_tbl_main'] ?? "";
+    }
+
+    public function get_opt_for_print_permit($permit_date)
+    {
+        $this->connect();
         $sql = "Call optplan_sp_get_opt_for_print_permit_date('$permit_date');";
         $res = mysqli_query($this->dbcon, $sql);
         $cell = mysqli_fetch_assoc($res);
         $this->close_connect();
-        return $cell['opt_plan_txt_optplan_tbl_main'];
-	}
+        return $cell['opt_plan_txt_optplan_tbl_main'] ?? "";
+    }
 
     public function get_note_for_today()
     {
@@ -261,7 +264,7 @@ class OPTPlanAjaxManager
         $res = mysqli_query($this->dbcon, $sql);
         $cell = mysqli_fetch_assoc($res);
         $this->close_connect();
-        return $cell['optnotes_optplan_tbl_main'];
+        return $cell['optnotes_optplan_tbl_main'] ?? "";
     }
 
     public function get_note_for_tomorrow()
@@ -271,13 +274,13 @@ class OPTPlanAjaxManager
         $res = mysqli_query($this->dbcon, $sql);
         $cell = mysqli_fetch_assoc($res);
         $this->close_connect();
-        return $cell['optnotes_optplan_tbl_main'];
+        return $cell['optnotes_optplan_tbl_main'] ?? "";
     }
 
     public function set_note_for_tomorrow($text)
     {
         $this->connect();
-		$text =  $this->normalizetext($text);
+        $text = $this->normalizetext($text);
         $sql = "Call optplan_sp_upsert_note_tomorrow('$text');";
         $res = mysqli_query($this->dbcon, $sql);
         if (mysqli_affected_rows($this->dbcon)) {
@@ -291,9 +294,9 @@ class OPTPlanAjaxManager
 
     public function note_for_today($text)
     {
-		//return $text;
-        $this->connect();		
-		$text =  $this->normalizetext($text);
+        //return $text;
+        $this->connect();
+        $text = $this->normalizetext($text);
         $sql = "Call optplan_sp_upsert_note('$text');";
         $res = mysqli_query($this->dbcon, $sql);
         if (mysqli_affected_rows($this->dbcon)) {

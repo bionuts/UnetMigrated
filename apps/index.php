@@ -1,3 +1,3 @@
 <?php 
-//silent is the best
+//silence is the best
 ?>

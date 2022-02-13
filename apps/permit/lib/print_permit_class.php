@@ -30,7 +30,10 @@ class print_permit_class
 	{
 		$this->connect();
         $rows = null;
-        $result = mysqli_query($this->conn, "select hint_value from permit_tbl_permit_activity_hints inner join permit_tbl_safty_activity_hints on permit_tbl_permit_activity_hints.fk_hint_id = permit_tbl_safty_activity_hints.hint_idwhere permit_tbl_permit_activity_hints.fk_permit_id = $permitid");
+        $result = mysqli_query($this->conn,
+            "select hint_id,hint_value from permit_tbl_permit_activity_hints" .
+            " inner join permit_tbl_safty_activity_hints on permit_tbl_permit_activity_hints.fk_hint_id = permit_tbl_safty_activity_hints.hint_id" .
+            " where permit_tbl_permit_activity_hints.fk_permit_id = $permitid");
 
         if (mysqli_num_rows($result) > 0) {
             while ($row = mysqli_fetch_assoc($result)) {
