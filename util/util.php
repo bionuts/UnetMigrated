@@ -6,7 +6,7 @@ class UtilClass
 	private $db = null;
 	private function contoDB()
 	{
-		$this->db = mysqli_connect('localhost', 'root', 'hmmhmm', 'unetdb');		
+		$this->db = mysqli_connect('localhost', 'root', '', 'unetdb');
         if ($this->db->connect_error) {            
             return 'nice day...';
         }
