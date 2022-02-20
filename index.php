@@ -36,6 +36,7 @@ $rand = rand(1,9999999999) * rand (1,999);
 	<link rel="stylesheet" href="css/common.css?r=<?php /*echo $rand*/ ?>" rel="stylesheet"/>
 	
     <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<!--    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>-->
     <script type="text/javascript" src="js/jqueryui/jquery-ui.min.js"></script>
     
     <script type="text/javascript" src="js/mas.js"></script>

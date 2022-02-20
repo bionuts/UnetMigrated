@@ -565,7 +565,7 @@ class new_request_class
         }
     }
 
-    public function insert_new_request($request)
+    public function insert_new_request($request,$ispeim=false)
     {
         $sql = "CALL permit_sp_insert_request(" . $_SESSION["userid"] . ",'" .
             addslashes($request['permit_desc']) . "'," . $request['nezarat_unit_id'] . ",'" .
@@ -598,15 +598,18 @@ class new_request_class
 
         $len = count($listof_nazer);
 
-        for ($index = 0; $index < $len; $index++) {
-            $sql .= "INSERT INTO permit_tbl_mojavez_nazer_list (mojavez_nazer_id, fkpermit_main_mojavez_nazer_id, fkusers_mojavez_nazer_id) VALUES (NULL, $permit_id, " . $listof_nazer[$index] . ");";
+        // Contractor can not select supervisor during applying new Request
+        // so this block should not run by Contractor Users
+        if(!$ispeim) {
+            for ($index = 0; $index < $len; $index++) {
+                $sql .= "INSERT INTO permit_tbl_mojavez_nazer_list (mojavez_nazer_id, fkpermit_main_mojavez_nazer_id, fkusers_mojavez_nazer_id) " .
+                    "VALUES (NULL, $permit_id, " . $listof_nazer[$index] . ");";
+            }
+            $this->connect();
+            mysqli_multi_query($this->conn, $sql);
+            $this->close_connect();
         }
 
-        $this->connect();
-
-        mysqli_multi_query($this->conn, $sql);
-
-        $this->close_connect();
         $sql = '';
         $len = count($listof_worker);
         for ($index = 0; $index < $len; $index++) {

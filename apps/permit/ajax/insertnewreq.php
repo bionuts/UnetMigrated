@@ -14,6 +14,8 @@ return 'hello';
 $putil = new permitUtil();
 $roleid = $putil->getUserRoleID($_SESSION['userid']);
 $roleid = $roleid[0];
+$isPeim = false;
+if ( $roleid == 1 || $roleid == 2 ) $isPeim = true;
 
 $deadtimereq = 11;
 //peimankar_request_for_permit
@@ -57,7 +59,7 @@ if($tcritical == 'true'){
 	}
 	
     if( $peim_can_permit )
-		$messege=$reqobj->insert_new_request($arrform);
+		$messege=$reqobj->insert_new_request($arrform,$isPeim);
 	else
 		$messege = '1';
 }
@@ -80,7 +82,7 @@ else if($tcritical == 'false')
 		}
 		
 		if( $peim_can_permit )
-			$messege=$reqobj->insert_new_request($arrform);
+			$messege=$reqobj->insert_new_request($arrform,$isPeim);
 		else 
 			$messege = '1';			
 	} 
