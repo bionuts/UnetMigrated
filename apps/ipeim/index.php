@@ -1,4 +1,5 @@
 <?php
+    include_once($_SERVER['DOCUMENT_ROOT'].'/config/main_config.php');
 	$res = '';
 	include 'lib/jdf.php';
 	if(isset($_POST['save_peim']))
@@ -57,7 +58,8 @@
 	function delpeim($id)
 	{
 		$deloutput = '';
-		$conn = mysqli_connect('localhost', 'root', 'hmmhmm', 'unetdb');
+		// $conn = mysqli_connect('localhost', 'root', 'hmmhmm', 'unetdb');
+        $conn = mysqli_connect(MainConfigClass::$dbserver, MainConfigClass::$user, MainConfigClass::$pass, MainConfigClass::$dbname);
         if ($conn->connect_error) return 'failed to connect to db';
 		//$sql = "CALL permit_sp_delete_peimankar($id);";
 		$res = mysqli_query($conn, $sql);		

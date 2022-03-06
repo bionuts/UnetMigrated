@@ -1,12 +1,14 @@
 <?php
-//include '../config/main_config.php';
+include_once($_SERVER['DOCUMENT_ROOT'].'/config/main_config.php');
 
 class UtilClass
 {
 	private $db = null;
 	private function contoDB()
 	{
-		$this->db = mysqli_connect('localhost', 'root', '', 'unetdb');
+		// $this->db = mysqli_connect('localhost', 'root', '', 'unetdb');
+        $this->db = mysqli_connect(MainConfigClass::$dbserver, MainConfigClass::$user, MainConfigClass::$pass, MainConfigClass::$dbname);
+        // $this->db = mysqli_connect('172.17.0.2', 'root', '123', 'unetdb');
         if ($this->db->connect_error) {            
             return 'nice day...';
         }

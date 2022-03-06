@@ -1,5 +1,5 @@
 ﻿<?php
-
+include_once($_SERVER['DOCUMENT_ROOT'].'/config/main_config.php');
 class new_request_class
 {
     private $conn;
@@ -77,7 +77,7 @@ class new_request_class
 
     private function connect()
     {
-        $this->conn = mysqli_connect(PermitConfigClass::$dbserver, PermitConfigClass::$user, PermitConfigClass::$pass, PermitConfigClass::$dbname);
+        $this->conn = mysqli_connect(MainConfigClass::$dbserver, MainConfigClass::$user, MainConfigClass::$pass, MainConfigClass::$dbname);
         if ($this->conn->connect_error) {
             return -1;
         }

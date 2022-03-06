@@ -1,5 +1,6 @@
 <?php
-include 'optplan-config.php';
+//include 'optplan-config.php';
+include_once($_SERVER['DOCUMENT_ROOT'].'/config/main_config.php');
 
 class OPTPlanAjaxManager
 {
@@ -8,7 +9,7 @@ class OPTPlanAjaxManager
 
     private function connect()
     {
-        $this->dbcon = mysqli_connect(OPTPlanConfigClass::$dbserver, OPTPlanConfigClass::$user, OPTPlanConfigClass::$pass, OPTPlanConfigClass::$dbname);
+        $this->dbcon = mysqli_connect(MainConfigClass::$dbserver, MainConfigClass::$user, MainConfigClass::$pass, MainConfigClass::$dbname);
         // Check connection
         if ($this->dbcon->connect_error) {
             return mysqli_error($this->dbcon);

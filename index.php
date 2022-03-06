@@ -4,7 +4,8 @@ include 'util/util.php';
 $util = new UtilClass();
 /*if($util->haveAcces('optplan',$_SESSION["userid"]))
 {}*/
-if($_SESSION['hashuser'] != $util->hashuser($_SESSION["userid"].$_SESSION["username"].$_SERVER['REMOTE_ADDR'].$_SERVER['HTTP_USER_AGENT'])) 
+
+if(@$_SESSION['hashuser'] != $util->hashuser(@$_SESSION["userid"].@$_SESSION["username"].$_SERVER['REMOTE_ADDR'].$_SERVER['HTTP_USER_AGENT']))
 {
     header("Location: logout.php");
     exit();

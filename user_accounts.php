@@ -1,5 +1,5 @@
 <?php
-include 'config/main_config.php';
+include_once($_SERVER['DOCUMENT_ROOT'].'/config/main_config.php');
 include 'util/util.php';
 
 class user_accounts_class

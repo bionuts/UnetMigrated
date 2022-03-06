@@ -1,5 +1,6 @@
 ﻿<?php
-include 'permit-config.php';
+// include 'permit-config.php';
+include_once($_SERVER['DOCUMENT_ROOT'].'/config/main_config.php');
 
 class print_permit_class
 {
@@ -14,7 +15,8 @@ class print_permit_class
     //connect to db
     private function connect()
     {
-        $this->conn = mysqli_connect(PermitConfigClass::$dbserver, PermitConfigClass::$user, PermitConfigClass::$pass, PermitConfigClass::$dbname);
+        // $this->conn = mysqli_connect(PermitConfigClass::$dbserver, PermitConfigClass::$user, PermitConfigClass::$pass, PermitConfigClass::$dbname);
+        $this->conn = mysqli_connect(MainConfigClass::$dbserver, MainConfigClass::$user, MainConfigClass::$pass, MainConfigClass::$dbname);
         // Check connection
         if ($this->conn->connect_error) {
             //database connection failed!

@@ -1,6 +1,7 @@
 <?php
 session_start();
-include '../lib/permit-config.php';
+// include '../lib/permit-config.php';
+include_once($_SERVER['DOCUMENT_ROOT'].'/config/main_config.php');
 include '../../../util/util.php';
 include '../lib/permitUtil.php';
 include '../lib/jdf.php';
@@ -31,7 +32,8 @@ $end_date         = explode( '/', trim( $_POST['enddate'] ) );
 $arr_miladi_end   = jalali_to_gregorian( $end_date[0], $end_date[1], $end_date[2] );
 
 
-$conn = mysqli_connect(PermitConfigClass::$dbserver, PermitConfigClass::$user, PermitConfigClass::$pass, PermitConfigClass::$dbname);
+//$conn = mysqli_connect(PermitConfigClass::$dbserver, PermitConfigClass::$user, PermitConfigClass::$pass, PermitConfigClass::$dbname);
+$conn = mysqli_connect(MainConfigClass::$dbserver, MainConfigClass::$user, MainConfigClass::$pass, MainConfigClass::$dbname);
 if ($conn->connect_error) {
 	return -1;
 }

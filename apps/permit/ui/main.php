@@ -11,7 +11,8 @@ if ( $_SESSION['hashuser'] != $util->hashuser( $_SESSION["userid"] . $_SESSION["
 	exit();
 }
 
-include '../lib/permit-config.php';
+// include '../lib/permit-config.php';
+include_once($_SERVER['DOCUMENT_ROOT'].'/config/main_config.php');
 include '../lib/permitUtil.php';
 $putil  = new permitUtil();
 $roleid = $putil->getUserRoleID( $_SESSION['userid'] );

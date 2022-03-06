@@ -1,5 +1,6 @@
 <?php
 include_once 'jdf.php';
+include_once($_SERVER['DOCUMENT_ROOT'].'/config/main_config.php');
 $putil = new permitUtil();
 
 class show_request
@@ -1215,7 +1216,7 @@ class show_request
 
     private function connect()
     {
-        $this->conn = mysqli_connect(PermitConfigClass::$dbserver, PermitConfigClass::$user, PermitConfigClass::$pass, PermitConfigClass::$dbname);
+        $this->conn = mysqli_connect(MainConfigClass::$dbserver, MainConfigClass::$user, MainConfigClass::$pass, MainConfigClass::$dbname);
         if ($this->conn->connect_error) {
             return -1;
         }

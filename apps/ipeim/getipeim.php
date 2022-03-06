@@ -1,10 +1,12 @@
-<?php 
+<?php
+    include_once($_SERVER['DOCUMENT_ROOT'].'/config/main_config.php');
 	$id_nezarat = $_POST['nezaratid'];
 	echo get_peymankars_list($id_nezarat);	
 	
 	function get_peymankars_list( $nezarat_id )
 	{
-		$conn = mysqli_connect('localhost', 'root', 'hmmhmm', 'unetdb');
+		// $conn = mysqli_connect('localhost', 'root', 'hmmhmm', 'unetdb');
+        $conn = mysqli_connect(MainConfigClass::$dbserver, MainConfigClass::$user, MainConfigClass::$pass, MainConfigClass::$dbname);
 		if ($conn->connect_error) return 'failed to connect to db';
 		mysqli_set_charset($conn, "utf8");
 
